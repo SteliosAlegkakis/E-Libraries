@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="js/student.js"></script>
+  <link rel="stylesheet" href="css/student.css">
+  <title>E-Libraries</title>
+</head>
+<body onload="getBooks('All')">
+  <div id="nav_bar">
+    <ul>
+      <li><a id="title">E-Libraries</a></li>
+      <li><input type="text" placeholder="Search..." class="nav_element"></li>
+      <li><i class="fa fa-search" id="search"></i></li>
+      <li>
+        <select id="genre" name="genre">
+          <option value="All">All</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Fantasy, Novel">Fantasy, Novel</option>
+          <option value="Novel">Novel</option>
+          <option value="Romance, Novel">Romance, Novel</option>
+          <option value="Sports">Sports</option>
+        </select>
+      </li>
+      <li>
+        <i id="user_icon" class='far nav_element'>&#xf2bd;</i>
+        <ul class="dropdown">
+          <li><a class="nav_element user_option">Borrowings</a></li>
+          <li><a class="nav_element user_option">Info</a></li>
+          <li><a class="nav_element user_option">Update</a></li>
+          <li><a class="nav_element user_option" onclick="logout()">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="column" id="ajaxContent">Ajax conent</div>
+</body>
+</html>

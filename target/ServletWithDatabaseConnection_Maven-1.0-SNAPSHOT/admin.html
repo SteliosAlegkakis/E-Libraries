@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="admin.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <title>Admin</title>
+</head>
+<body>
+  <div class="column" style="align-items: center">
+
+    <form id="admin_login" name="admin_login" onsubmit='return false;'>
+      <h1>Admin Login</h1>
+      <div class="column" style="align-items: flex-start">
+        <h4>Username</h4>
+        <input type="text"  id="login_username" name="username" required><br>
+      </div>
+      <div class="column" style="align-items: flex-start">
+        <h4>Password</h4>
+        <input type="password"  name="password" required><br>
+      </div>
+      <h4 id="wrong_admin_login" style="display: none;color: red;">Username or Password incorrect</h4>
+      <button class="submit" onclick="adminLogin()">Login</button>
+    </form>
+
+    <div class="column" id="admin_page" style="display:none;">
+      <div class="row" id="menu_bar" style="align-items: center;justify-content: center">
+        <h2 style="color: #50A8EA;width: 14rem;margin: 0">E-Libraries</h2>
+        <div class="row" style="padding: 0;align-items: center">
+          <h3 class="menu_button" onclick="showUsers()">Show Users</h3>
+          <h3 class="menu_button" onclick="showStatistics()">Statistics</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="adminContent" class="column" style="align-items: center;width: 100%;"></div>
+    <div id="charts" class="column" style="align-items: center;width: 100%;display: none">
+      <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+      <div id="piechart_3d1" style="width: 900px; height: 500px;"></div>
+    </div>
+
+  </div>
+</body>
+</html>

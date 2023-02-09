@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+
+/*Navigation bar*/
+
+ul{
+    list-style: none;
+    border: 1px solid white;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+}
+#title{
+    font-size: 2rem;
+    color: #50A8EA;
+    font-weight: 900;
+    margin-right: 4rem;
+    margin-left: 1rem;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li  .nav_element{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#user_icon{
+    font-size: 2rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    /* background: #22438C; */
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li .user_option:hover{
+    background: whitesmoke;
+    cursor: pointer;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+/*end of navigation bar*/
+
+input{
+    border:1px solid #bdc7d8;
+    height: 0.2rem;
+    width: 30rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    outline: none;
+    box-shadow: 0 0 0 2px white;
+}
+
+select{
+    border:1px solid #bdc7d8;
+    border-radius: 30px;
+    margin: 0.5rem;
+}
+
+
+.column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    ustify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.book{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.book_title{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.book_p{
+    margin-left: 0.5rem;
+}
+
+.button{
+    margin: 1.5rem;
+    width: 14rem;
+    height: 3rem;
+    color: black;
+    border-radius: 30px;
+    border: #bdc7d8;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    filter: grayscale(0.2);
+    box-shadow: 0px 0px 18px 0 #0000002c;
+}
+
+img{
+    width: 20rem;
+    height: auto;
+    max-width: 50%;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="mainpage.js"></script>
+    <script src="guest.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Guest</title>
+</head>
+<body onload="getBooksGuest('All')">
+<div class="column" style="align-items: center">
+    <div id="mainpage">
+        <div class="row" id="menu_bar" style="align-items: center;justify-content: center">
+            <h2 style="color: #50A8EA;width: 14rem;margin: 0">E-Libraries</h2>
+            <div class="row" style="padding: 0;align-items: center">
+                <input type="text" id="book_title" placeholder="search ...">
+                <h3><i class="fa fa-search" id="search" onclick="getBookGuest(document.getElementById('book_title').value)"></i></h3>
+                <select id="genre" name="genre" style="width: 15%"onchange="getBooksGuest(this.value)">
+                    <option value="All">All</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Fantasy, Novel">Fantasy, Novel</option>
+                    <option value="Novel">Novel</option>
+                    <option value="Romance, Novel">Romance, Novel</option>
+                    <option value="Sports">Sports</option>
+                </select>
+                <h3 class="menu_button" onclick="showLinks()">links</h3>
+            </div>
+        </div>
+    </div>
+    <div id="ajaxContent" class="column" style="align-items: center;width: 100%;"></div>
+    <div class="box column" style="display: none" id="links">
+        <a href="https://www.uoc.gr/">UOC</a>
+        <a href="https://www.helmepa.gr/?view=default">Helmepa</a>
+        <a href="https://www.tuc.gr/index.php?id=4992">TUC</a>
+        <a href="http://www.vikelaia.gr/">Vikelaia</a>
+    </div>
+</div>
+</body>
+</html>

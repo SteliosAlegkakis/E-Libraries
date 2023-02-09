@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+*{
+    margin: 0.5rem;
+}
+
+html{
+    font-size: 15px;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-image: url("books.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;*/
+}
+
+form,.box{
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+}
+
+h1{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: #50A8EA;
+}
+
+i{
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+textarea{
+    width: 95%;
+}
+
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px grey;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    height: 2rem;
+    border:1px solid #bdc7d8;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px grey;
+}
+
+input[type="email"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px grey;
+}
+
+input[type="password"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px grey;
+}
+
+input[type="date"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px grey;
+}
+
+input[type="url"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px grey;
+}
+
+i{
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+#Map{
+    height:400px;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
+select:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px grey;
+}
+
+.row,input{
+    width: 90%;
+}
+
+.radio{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    border:1px solid #bdc7d8;
+    border-radius: 10px;
+}
+
+.column{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.radio .radio-title{
+    font-weight: 900;
+
+}
+
+.radio-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-input .radio-element input{
+    height: 10px;
+    width: 10px;
+}
+
+.radio-input .radio-element{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+select{
+    width: 90%;
+    border:1px solid #bdc7d8;
+    border-radius: 30px;
+    margin: 0.5rem;
+}
+
+h4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainpage,#admin_page{
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+}
+
+img{
+    width: 200px;
+    height: auto;
+    max-width: 50%;
+    background-color: whitesmoke;
+}
+
+.bookInfo{
+    max-width: 50%;
+}
+
+.menu_button{
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /*width: 14rem;*/
+    /*height: 3rem;*/
+    color: black;
+    /*font-size: 1.2rem;*/
+    font-weight: bold;
+    border: none;
+    transition: .3s ease all;
+}
+
+.menu_button:hover{
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    text-decoration-color: #50A8EA;
+    color: #50A8EA;
+    transform: scale(1.2);
+}
+
+#user_icon{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#user_menu{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#search{
+    margin-bottom: 2rem;
+}
+
+#ajaxContent{
+    background-color: white;
+}
+
+.submit{
+    margin: 3rem;
+    width: 14rem;
+    height: 3rem;
+    color: white;
+    background-color: #00a400;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: #00a400;
+    transition: .3s ease all;
+}
+
+.button{
+    margin-bottom: 1rem;
+    width: 14rem;
+    height: 3rem;
+    color: black;
+    border-radius: 30px;
+    border: #bdc7d8;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .3s ease all;
+}
+
+.error-message{
+    display: none;
+    color: red;
+}
+
+.submit:hover,.button:hover{
+    filter: grayscale(0.2);
+    box-shadow: 0px 0px 18px 0 #0000002c;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    form{
+        width: 90%;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .radio-input{
+        flex-direction: column;
+        height: 200px;
+        width: 90%;
+    }
+
+    .radio-input input{
+        height: 10px;
+        width: 10px;
+    }
+
+    i{
+        margin-left: 13rem;
+        margin-top: -30px;
+    }
+
+    map{
+        height: 100px;
+    }
+}
