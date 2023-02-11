@@ -43,6 +43,7 @@ ul li ul.dropdown{
     /* background: #22438C; */
     position: absolute;
     z-index: 999;
+    background-color: white;
     display: none;
 }
 ul li .user_option:hover{
