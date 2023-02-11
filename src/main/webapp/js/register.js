@@ -335,7 +335,7 @@ function loadDoc(){
 
     var address = readAddress();
     xhr.open("GET", "https://forward-reverse-geocoding.p.rapidapi.com/v1/search?q="+address+"&polygon_threshold=0.0");
-    xhr.setRequestHeader("X-RapidAPI-Key", "f2f9ed6942msh1bf966fdf276b80p15644bjsn7ea754a51041");
+    xhr.setRequestHeader("X-RapidAPI-Key", "mykey");
     xhr.setRequestHeader("X-RapidAPI-Host", "forward-reverse-geocoding.p.rapidapi.com");
     xhr.send(data);
 }
