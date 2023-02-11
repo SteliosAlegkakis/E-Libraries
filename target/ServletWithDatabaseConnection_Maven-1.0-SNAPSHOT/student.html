@@ -17,7 +17,7 @@
       <li><input type="text" placeholder="Search..." class="nav_element"></li>
       <li><i class="fa fa-search" id="search"></i></li>
       <li>
-        <select id="genre" name="genre">
+        <select id="genre" name="genre" onchange="getBooks(this.value)">
           <option value="All">All</option>
           <option value="Adventure">Adventure</option>
           <option value="Fantasy">Fantasy</option>
