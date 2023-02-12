@@ -14,8 +14,8 @@
   <div id="nav_bar">
     <ul>
       <li><a id="title">E-Libraries</a></li>
-      <li><input type="text" placeholder="Search..." class="nav_element"></li>
-      <li><i class="fa fa-search" id="search"></i></li>
+      <li><input id="book_title" type="text" placeholder="Search..." class="nav_element"></li>
+      <li><i class="fa fa-search" id="search" onclick="getBook(document.getElementById('book_title').value)"></i></li>
       <li>
         <select id="genre" name="genre" onchange="getBooks(this.value)">
           <option value="All">All</option>

@@ -1,4 +1,5 @@
 function showGuestBooks(books){
+    if(books[0]===null) return "";
     let html = "";
     html+="<div class='column' style='align-items: center;justify-content: center;width: 100%'>"
     for(let i = 0;i < books.length;i++){
@@ -26,6 +27,22 @@ function getGuestBooks(genre){
         }
     }
     let data = "request=getBooks&genre="+genre;
+    xhr.open('GET', 'StudentServlet?'+data);
+    xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+    xhr.send();
+}
+
+function getGuestBook(title){
+    console.log("getGuestBook");
+    let xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            let book = readBooks(xhr);
+            $("#ajaxContent").html(showGuestBooks(book));
+            document.getElementById("ajaxContent").style.display = 'flex';
+        }
+    }
+    let data = "request=getBooks&book_title="+title;
     xhr.open('GET', 'StudentServlet?'+data);
     xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xhr.send();

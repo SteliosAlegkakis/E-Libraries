@@ -53,6 +53,9 @@ ul li .user_option:hover{
 ul li:hover ul.dropdown{
     display: block;
 }
+#search{
+    cursor: pointer;
+}
 /*end of navigation bar*/
 
 input{
